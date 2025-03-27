@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | Victous Health Club</title>
+    <link rel="stylesheet" href="../css/membership.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Your Membership</h1>
+    </header>
+
+    <main>
+        <form id="membership-form">
+            <label for="membership">Choose Membership Plan:</label>
+            <select id="membership">
+                <option value="Basic">Basic - $10/month</option>
+                <option value="Premium">Premium - $30/month</option>
+                <option value="VIP">VIP - $50/month</option>
+            </select>
+            <button type="submit">Upgrade / Renew</button>
+        </form>
+
+        <section id="referral-section">
+            <h2>Refer & Earn</h2>
+            <p>Invite your friends and earn rewards!</p>
+            <input type="text" id="referral-link" readonly>
+            <button onclick="copyReferral()">Copy Referral Link</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Victous Health Club. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/membership.js"></script>
+</body>
+</html>

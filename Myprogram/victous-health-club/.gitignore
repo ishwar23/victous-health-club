@@ -1,0 +1,36 @@
+# 🛑 Node.js Dependencies (GitHub पर Push नहीं करना चाहिए)
+node_modules/
+package-lock.json
+
+# 🛑 Environment Variables (Sensitive Data)
+.env
+
+# 🛑 Logs & Debugging Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# 🛑 OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# 🛑 Build Output (अगर TypeScript/Webpack यूज़ हो रहा हो)
+dist/
+build/
+
+# 🛑 Firebase / VSCode / JetBrains Files
+.firebase/
+.vscode/
+.idea/
+
+# 🛑 Render / Railway / Heroku Deployment Files
+.env.production
+.env.local
+.env.development
+
+# 🛑 Temporary Files
+*.tmp
+*.bak
+node_modules/
+.env

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏅 Victous Health Club</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Video Background Section -->
+    <section class="video-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="../assets/videos/gym-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h1 class="fade-in-text">🏅 Welcome to Victous Health Club</h1>
+            <p class="slide-in">Your journey to fitness starts here!</p>
+            <a href="membership.html" class="btn">Join Now</a>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <img src="../assets/icons/workout.png" alt="Workout Plans">
+            <h3>Custom Workout Plans</h3>
+            <p>Get personalized workout plans tailored to your fitness goals.</p>
+        </div>
+        <div class="feature-card">
+            <img src="../assets/icons/nutrition.png" alt="Nutrition Guidance">
+            <h3>Nutrition Guidance</h3>
+            <p>Professional diet plans and nutrition consultation.</p>
+        </div>
+        <div class="feature-card">
+            <img src="../assets/icons/trainer.png" alt="Expert Trainers">
+            <h3>Expert Trainers</h3>
+            <p>Learn from certified trainers and achieve your fitness dreams.</p>
+        </div>
+    </section>
+
+    <!-- Live Chat Section -->
+    <div class="chat-box">
+        <div class="chat-header">
+            <h3>Live Chat Support</h3>
+            <button onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Messages will be dynamically loaded here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <button class="chat-toggle-btn" onclick="toggleChat()">💬</button>
+
+    <!-- Push Notification Section -->
+    <div id="notification-box" class="hidden">
+        <p id="notification-message"></p>
+        <button onclick="closeNotification()">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Victous Health Club. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/chat.js"></script>
+    <script src="../js/notifications.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Victous Health Club</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-list" id="cart-list">
+            <!-- Cart Items will be loaded here dynamically -->
+        </section>
+
+        <div class="cart-summary">
+            <h2>Total: $<span id="cart-total">0.00</span></h2>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Victous Health Club. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>

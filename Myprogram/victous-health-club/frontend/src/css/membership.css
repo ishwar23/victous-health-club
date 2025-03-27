@@ -1,0 +1,62 @@
+.membership-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.plan {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    font-size: 1.8em;
+    color: #222;
+}
+
+.plan p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.plan h2 {
+    font-size: 2em;
+    color: #ff9900;
+    margin: 10px 0;
+}
+
+.plan button {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    color: #222;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.plan button:hover {
+    background: #ffaa00;
+}
+
+/* Highlight Popular Plan */
+.popular {
+    border: 2px solid #ff9900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .membership-plans {
+        flex-direction: column;
+    }
+}

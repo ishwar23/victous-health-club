@@ -1,0 +1,31 @@
+.testimonials-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #e8e8e8;
+}
+
+.testimonial {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.testimonial h4 {
+    font-size: 1.1em;
+    color: #222;
+    margin-top: 10px;
+}
