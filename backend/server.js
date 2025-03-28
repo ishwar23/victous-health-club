@@ -1,6 +1,14 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const dotenv = require("dotenv");
+const connectDB = require("./config/db");
+
+// Load Env Variables
+dotenv.config();
+
+// Connect Database
+connectDB();
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -15,9 +23,11 @@ app.use(express.static(path.join(__dirname, "../frontend")));
 // Import Routes
 const contactRoutes = require("./routes/contact");
 const bookingRoutes = require("./routes/booking");
+const adminUsersRoutes = require("./routes/adminUsers");
 
 app.use("/api/contact", contactRoutes);
 app.use("/api/booking", bookingRoutes);
+app.use("/api/admin", adminUsersRoutes);
 
 // ✅ Serve `index.html` for Home Page
 app.get("/", (req, res) => {
